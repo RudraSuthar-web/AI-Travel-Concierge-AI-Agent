@@ -37,6 +37,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem !important;
 }
 
+/* Force dark text for expander content specifically (leaves buttons styled separately) */
+.stExpander summary p, 
+.stExpander p, 
+.stExpander li, 
+.stExpander span, 
+.stExpander label,
+.stExpander h5 {
+    color: #2F3E33 !important;
+}
+
 /* Styled upload region wrapper */
 [data-testid="stFileUploader"] {
     border: 1px dashed #C5A059 !important;
@@ -70,12 +80,26 @@ h1, h2, h3, h4, h5, h6 {
     border-right: 4px solid #5C836A;
 }
 
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) p,
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) li,
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) span {
+    color: #2F3E33 !important;
+}
+
 /* Assistant Message bubble styling (Warm White & Gold Accent Card) */
 [data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
     background-color: #FFFFFF !important;
     border: 1px solid #E5DEC9;
     border-left: 4px solid #C5A059; /* Gold accent */
     box-shadow: 0 4px 12px rgba(42, 75, 53, 0.02);
+}
+
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) p,
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) li,
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) span,
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) pre,
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) code {
+    color: #2F3E33 !important;
 }
 
 /* Avatar Colors */
@@ -102,11 +126,21 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease !important;
 }
 
+.stButton>button p,
+.stButton>button span {
+    color: #FAF8F5 !important;
+}
+
 .stButton>button:hover {
     background-color: #C5A059 !important;
     border-color: #C5A059 !important;
     color: #FFFFFF !important;
     box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3) !important;
+}
+
+.stButton>button:hover p,
+.stButton>button:hover span {
+    color: #FFFFFF !important;
 }
 
 /* Chat Input Bar Fixes */
