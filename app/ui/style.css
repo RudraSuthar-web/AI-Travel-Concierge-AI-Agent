@@ -1,0 +1,118 @@
+/* --- Luxury Travel Lounge Single-Column Stylesheet --- */
+
+/* Hide Streamlit Sidebar & Sidebar Expanders Completely */
+[data-testid="stSidebar"] {
+    display: none !important;
+}
+[data-testid="collapsedControl"] {
+    display: none !important;
+}
+
+/* Base Body Styles */
+.stApp {
+    background-color: #FAF8F5;
+}
+
+/* Center Content & Constrain Width (ChatGPT/Claude Style) */
+[data-testid="stAppViewBlockContainer"] {
+    max-width: 850px !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    margin: 0 auto !important;
+}
+
+/* Typography & Headers styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #2A4B35 !important;
+    font-family: 'Playfair Display', 'Georgia', serif !important;
+    font-weight: 700;
+}
+
+/* Collapsible Document Manager Expander Styling */
+.stExpander {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E6DFD3 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 16px rgba(42, 75, 53, 0.03) !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Styled upload region wrapper */
+[data-testid="stFileUploader"] {
+    border: 1px dashed #C5A059 !important;
+    background-color: #FCFAF7;
+    border-radius: 8px;
+    padding: 0.8rem;
+}
+
+/* Status alerts and cards */
+.stAlert {
+    background-color: #FAF9F5 !important;
+    border: 1px solid #EBE7DC !important;
+    border-left: 4px solid #C5A059 !important;
+    border-radius: 6px;
+    color: #2F3E33 !important;
+}
+
+/* Chat Messages Layout Rules */
+[data-testid="stChatMessage"] {
+    background-color: transparent !important;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    transition: transform 0.2s ease;
+}
+
+/* User Message bubble styling (Sage/Mint tint) */
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-user"]) {
+    background-color: #EBF2EE !important;
+    border: 1px solid #D5E4DC;
+    border-right: 4px solid #5C836A;
+}
+
+/* Assistant Message bubble styling (Warm White & Gold Accent Card) */
+[data-testid="stChatMessage"]:has([data-testid="chatAvatarIcon-assistant"]) {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E5DEC9;
+    border-left: 4px solid #C5A059; /* Gold accent */
+    box-shadow: 0 4px 12px rgba(42, 75, 53, 0.02);
+}
+
+/* Avatar Colors */
+[data-testid="chatAvatarIcon-user"] {
+    background-color: #2A4B35 !important;
+}
+[data-testid="chatAvatarIcon-assistant"] {
+    background-color: #C5A059 !important;
+}
+
+/* Gold references/citations box styling */
+.stAlert div {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Standard Buttons UI Styling */
+.stButton>button {
+    background-color: #2A4B35 !important;
+    color: #FAF8F5 !important;
+    border-radius: 6px !important;
+    border: 1px solid #2A4B35 !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton>button:hover {
+    background-color: #C5A059 !important;
+    border-color: #C5A059 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3) !important;
+}
+
+/* Chat Input Bar Fixes */
+[data-testid="stChatInput"] {
+    border-radius: 10px !important;
+    border: 1px solid #E3D9CC !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+}

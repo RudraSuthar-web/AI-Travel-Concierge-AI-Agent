@@ -156,8 +156,8 @@ def generator_node(state: AgentState) -> Dict[str, Any]:
         system_prompt = (
             "You are an AI Travel Concierge Assistant. "
             "Help the user plan their travels, organize schedules, or answer questions.\n"
-            "Let them know that they can upload travel documents (PDF, TXT, DOCX) in the sidebar "
-            "so you can query specific itineraries and tickets directly!"
+            "Let them know that they can expand the 'Document Manager & Settings' at the top of the page "
+            "to upload travel documents (PDF, TXT, DOCX) and query specific itineraries directly!"
         )
         
         # Build conversational prompt

@@ -23,7 +23,7 @@ def render_chat_interface():
                     "Hello! I am your **AI Travel Concierge Assistant** 🗺️✈️\n\n"
                     "I can answer general travel planning questions, or provide deep insights into your travel plans.\n\n"
                     "🚀 **How to use me:**\n"
-                    "1. Upload flight confirmation PDFs, hotel reservation DOCX, or packing TXT files in the sidebar.\n"
+                    "1. Expand the **Document Manager & Settings** at the top of the page and upload your flight confirmations, hotel reservations, or itineraries.\n"
                     "2. Ask questions about your trip details (e.g. *'What time is my flight?'* or *'What is my hotel reservation number?'*).\n"
                     "3. Try testing the custom agent nodes by asking me to **'summarize documents'** or **'list documents'**!"
                 ),
